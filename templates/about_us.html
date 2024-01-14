@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>About Us</title>
+<style>
+    .footer {
+  position: fixed;
+  left: 5%;
+  bottom: 0;
+  width: 90%;
+  text-align: center;
+    }
+</style>
+{% endblock %}
+
+{% block body %} 
+<nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Flower Identification AI</a>
+      <a class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample01">
+        <ul class="navbar-nav me-auto mb-2">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about_us">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/contact_us" tabindex="-1" aria-disabled="true">Contact us</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+
+<main class="container">
+    <div class="bg-light p-5 rounded mt-3">
+        <h1 style="text-align: center;"> About us </h1>
+        <h2 style="text-align: center;">We are three students who study in Our Own High School. Our names are, Cael Serrao, Damian Mascarenas, Manan Suri. We study in class 11 - A</h2>
+    </div>
+</main>
+<div class="container">
+    <div class="footer">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-muted">&copy; 2021 Flower Detection ML</p>
+        
+            <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+            </a>
+        
+            <ul class="nav col-md-4 justify-content-end">
+              <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Home</a></li>
+              <li class="nav-item"><a href="/about_us" class="nav-link px-2 text-muted">About us</a></li>
+              <li class="nav-item"><a href="/contact_us" class="nav-link px-2 text-muted">Contact us</a></li>
+              <li class="nav-item"><a href="/ai_page" class="nav-link px-2 text-muted">Flower AI</a></li>
+            </ul>
+        </footer>
+    </div>
+  </div>
+{% endblock %}
